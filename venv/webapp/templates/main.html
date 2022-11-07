@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<style>
+form {
+    margin: auto;
+    width: 35%;
+}
+
+.result {
+    margin: auto;
+    width: 35%;
+    border: 1px solid #ccc;
+}
+</style>
+
+<head>
+    <title>AceStat</title>
+</head>
+<form action="{{ url_for('main') }}" method="POST">
+    <fieldset>
+        <legend>Input values:</legend>
+        TimeCycle:
+        <input name="Data1" type="number" step="any" required>
+        <br>
+        <br> OperationSetting_1:
+        <input name="Data2" type="number" step="any" required>
+        <br>
+        <br> OperationSetting_2:
+        <input name="Data3" type="number" step="any" required>
+        <br>
+        <br> FuelFlow:
+        <input name="Data4" type="number" step="any" required>
+        <br>
+        <br> Torque:
+        <input name="Data5" type="number" step="any" required>
+        <br>
+        <br> Temperature:
+        <input name="Data6" type="number" step="any" required>
+        <br>
+        <br> Pressure:
+        <input name="Data7" type="number" step="any" required>
+        <br>
+        <br> AirTemperature:
+        <input name="Data8" type="number" step="any" required>
+        <br>
+        <br> RotationalSpeed:
+        <input name="Data9" type="number" step="any" required>
+        <br>
+        <br> Tool_Wear_factor:
+        <input name="Data10" type="number" step="any" required>
+        <br>
+        <br> Position_Sensor:
+        <input name="Data11" type="number" step="any" required>
+        <br>
+        
+        <br> Corrosion_Sensor:
+        <input name="Data12" type="number" step="any" required>
+        <br>
+        
+        <br> HydroCarbon_Sensor:
+        <input name="Data13" type="number" step="any" required>
+        <br>
+        
+        <br> Seismic_Sensor:
+        <input name="Data14" type="number" step="any" required>
+        <br>
+        
+        <br> Wireless_Sensor:
+        <input name="Data15" type="number" step="any" required>
+        <br>
+        
+        <br> LiquidLevel_Sensor:
+        <input name="Data16" type="number" step="any" required>
+        <br>
+        
+        <input type="submit">
+    </fieldset>
+</form>
+<br>
+<div class="result" align="center">
+    <!-- {% if result %}
+    	{% for variable, value in original_input.items() %}
+    		<b>{{ variable }}</b> : {{ value }}
+    	{% endfor %}
+		<br> -->
+    	<br> Predicted RUL(Remaining Useful Life) of the machine is: (in time cycles):
+   		<p style="font-size:50px">{{ result }}</p>
+    {% endif %}
+</div>
+
+</html>

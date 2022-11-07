@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flask Parent Template</title>
+    
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/template.css') }}">
+    
+     <br><br><br>
+</head>
+  <body style = "background-color: rgb(231, 219, 112);">
+    <header>
+      <div class="container">
+        <h1 style="text-align: center; color:rgb(0, 0, 0);font-size:91px;">AceStat</h1><br>
+        <!-- <strong><nav>
+          <ul class="menu">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li> -->
+            <form>
+              <label for="fname", style="color: rgb(0, 0, 0);">Data1</label><br>
+              <input type="text" id="fname" name="fname"><br>
+              </form><br><br>
+
+            <form>
+              <label for="fname", style="color: rgb(0, 0, 0);">Data2</label><br>
+              <input type="text" id="fname" name="fname"><br>
+              </form><br><br>
+
+              <form>
+                <label for="fname", style="color: rgb(0, 0, 0);">Data3</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                </form><br><br>
+
+                <form>
+                  <label for="fname", style="color: rgb(0, 0, 0);">Data4</label><br>
+                  <input type="text" id="fname" name="fname"><br>
+                  </form><br><br>
+
+                  <form>
+                    <label for="fname", style="color: rgb(0, 0, 0);">Data5</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    </form><br><br>
+                  
+                    <form>
+                      <label for="fname", style="color: rgb(0, 0, 0);">Data6</label><br>
+                      <input type="text" id="fname" name="fname"><br>
+                      </form><br><br>
+
+                      <form>
+                        <label for="fname", style="color: rgb(0, 0, 0);">Data7</label><br>
+                        <input type="text" id="fname" name="fname"><br>
+                        </form><br><br>
+
+                        <form>
+                          <label for="fname", style="color: rgb(0, 0, 0);">Data8</label><br>
+                          <input type="text" id="fname" name="fname"><br>
+                          </form><br><br>
+                          <br>
+                          <button type="button" class="btn btn-outline-dark" style="color: rgb(255, 14, 70);">Predict</button><br><br>
+          </ul>
+        </nav></strong>
+      </div>
+    </header>
+    
+    
+{% block content %}
+{% endblock %}
+
+ </body>
+</html>
